@@ -1,0 +1,148 @@
+style.css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*Default font*/
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #474747;
+}
+
+#introdogs {
+  border-radius: 50%;
+  width: 200px;
+  height:200px;
+  margin-bottom: 20px;
+}
+
+#welcome{
+}
+
+.errors{
+    display:block;
+    color:red;
+}
+
+select {
+    display:block;
+    height: 30px;
+    width:350px;
+}
+/*For elements that should be centered*/
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lefttext{
+    text-align: left;
+}
+
+.button {
+    margin-top:30px;
+    background-color: white;
+    height:30px;
+    width:100px;
+}
+
+/*text types*/
+h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+h2{
+    font-size:1.3em;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+h3{
+    font-size:1em;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+
+strong {
+  font-weight: bold;
+}
+
+label{
+    line-height: 2em;
+}
+
+
+
+.centertext{
+    text-align: center;
+    display: block;
+}
+
+
+/* Link styles */
+a:link {
+  color: #fd63fc;
+  text-decoration: none;
+}
+a:visited {
+  color: #fd63fc;
+}
+a:hover {
+  color: #000000;
+}
+
+#endquiz{
+    margin-top:10px;
+}
+
+#resultFish {
+    opacity: 0;
+}
+
+#frame {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+    margin-top: 20px;
+    border: solid black;
+    border-width: 10px 2px 2px 2px;
+    padding:15px;
+    /*padding: 10px;*/
+}
+
+#petResultImage{
+    width: 200px;
+}
+
+.hidden{
+    display: none;
+}
+
+.lowScore {
+    color: #3fa7c1;
+}
+
+.medScore {
+    color: #b671ba;
+}
+
+.highScore {
+    color: #7ae074;
+}
+
+/*For large screens, panels take half the screen each*/
+@media (min-width: 600px) {
+
+    #frame {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding: 10px;*/
+    }
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>The Pet Test!</title>
+        <!-- information about website -->
+        <meta charset="UTF-8">
+        <meta name="description" content="COSC260 Javascript Assignment">
+        <meta name="keywords" content="pet, test, animal, compatibility">
+        <meta name="author" content="Alexander Reeves">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- JQuery Library 0-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Pet Test JS -->
+        <script type="text/javascript" src="js/pet_test.js"></script>
+        <!-- this tag fixes some media min-width issues in some cases -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if lt IE9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        </head>
+
+    <body>
+        <!-- Start Wrapper -->
+        <div id="frame">
+            <div id="welcome">
+                <img src="./img/introdogs.jpg" id="introdogs" class="center" alt="Credits: image 5926065 at rawpixel.com creative commons">
+                <h1 class="centertext">Perfect Pet Test!</h1>
+                <h3 class="centertext">Find your perfect companion</h3>
+                <hr>
+
+            </div>
+
+            <div id="questions">
+                <p class="lefttext">
+                    <br>
+                    Take our test to find the perfect pet for you.
+                    <br>
+                    Enter selections from the questionaire below, and submit the form to find your ideal pet!
+                </p>
+                <form id="petquiz">
+                    <label for="q1">How much space do you have for a pet?</label>
+                    <select name="q1" id="q1">
+                      <option  value="0">None Selected</option>
+                      <option  value="0">A. Very limited space (e.g., apartment) </option>
+                      <option  value="5">B. Moderate space (e.g., small house) </option>
+                      <option  value="10">C. Large space (e.g., spacious house with yard) </option>
+                    </select>
+                    <label for="q2">How much time can you dedicate to exercising your pet?</label>
+                    <select name="q2" id="q2">
+                      <option  value="0">None Selected</option>
+                      <option  value="0">A. Very little time</option>
+                      <option  value="5">B. Some time each day </option>
+                      <option  value="10">C. A lot of time for daily exercise </option>
+                    </select>
+                    <label for="q3">How important is ease of grooming to you?</label>
+                    <select name="q3" id="q3">
+                      <option  value="0">None Selected</option>
+                      <option  value="0">A. Very important (prefer low-maintenance pets)</option>
+                      <option  value="5">B. Somewhat important (willing to groom regularly)</option>
+                      <option  value="10">C. Not important (willing to invest time in grooming)</option>
+                    </select>
+                    <label for="q4">What noise level is acceptable to you?</label>
+                    <select name="q4" id="q4">
+                      <option  value="0">None Selected</option>
+                      <option  value="0">A. Prefer a quiet pet</option>
+                      <option  value="5">B. Moderate noise is okay</option>
+                      <option  value="10">C. Don’t mind loud noises</option>
+                    </select>
+                    <label for="q5">How much interaction do you want from your pet?</label>
+                    <select name="q5" id="q5">
+                      <option  value="0">None Selected</option>
+                      <option  value="0">A. Prefer a more independent pet </option>
+                      <option  value="5">B. Moderate interaction (some playtime and attention)</option>
+                      <option  value="10">C. Very interactive and affectionate pet </option>
+                    </select>
+                    <p class="lefttext" id="endquiz">
+                        Happy with your selections? Hit 'Submit' to see your results!
+                    </p>
+                    <input type="submit" id="submitTest" value="Submit" class="button center">
+                    <hr id="endQuiz">
+
+                    <img src="./img/goldfish.png" id="resultFish" class="center hidden" alt="Credits: image 42540 at pickpik.com, license: creative commons">
+                    <img src="./img/cat.png" id="resultCat" class="center hidden" alt="Credits: https://picryl.com/media/kitten-cat-cat-baby-animals-6023b2, license: creative commons">
+                    <img src="./img/dog.png" id="resultDog" class="center hidden" alt="Credits: https://commons.wikimedia.org/wiki/File:Bon_toutou.png, license: creative commons">
+                    
+                    <!-- https://commons.wikimedia.org/wiki/File:Bon_toutou.png Dog -->
+                    <!-- image 42540 at pickpik.com creative commons fish -->
+                    <!-- cat https://picryl.com/media/kitten-cat-cat-baby-animals-6023b2 -->
+                </form>
+            </div>
+        </div>
+        <!-- End wrapper -->
+    </body>
+    <!-- End Body -->
+
+</html>
