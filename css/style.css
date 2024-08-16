@@ -99,9 +99,8 @@ a:hover {
     margin-top:10px;
 }
 
-#resultFish {
-    opacity: 0;
-}
+
+
 
 #frame {
     max-width: 100%;
@@ -115,8 +114,23 @@ a:hover {
     /*padding: 10px;*/
 }
 
+/*Generic Pet Image Result Display */
 #petResultImage{
     width: 200px;
+}
+
+/*Followed by display elements that apply after only for specific pictures*/
+#resultFish {
+    opacity: 0;
+}
+#resultCat {
+    width: 0;
+    /*The cats height when at full width*/
+    /*Prevents the animation from stretching the whole image to just width*/
+    height:225.3px;
+}
+#resultDog {
+    padding-left:1000px;
 }
 
 .hidden{
