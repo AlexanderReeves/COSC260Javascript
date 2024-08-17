@@ -95,8 +95,41 @@ a:hover {
   color: #000000;
 }
 
+ul{
+    list-style-type: circle;
+}
+li{
+    list-style-type: circle;
+    display: list-item !important;
+}
+
 #endquiz{
     margin-top:10px;
+}
+
+.inputTextbox{
+    width:100%;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:30px;
+}
+
+.inputLabel{
+    width:100%;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comfortView{
+    width:100%;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 
