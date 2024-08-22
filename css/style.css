@@ -144,7 +144,7 @@ li{
     border: solid black;
     border-width: 10px 2px 2px 2px;
     padding:15px;
-    /*padding: 10px;*/
+    border-color: #474747;
 }
 
 /*Generic Pet Image Result Display */

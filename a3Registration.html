@@ -3,7 +3,7 @@
 
     <head>
         <title>The Pet Test!</title>
-        <!-- information about website -->
+        <!-- information about this website -->
         <meta charset="UTF-8">
         <meta name="description" content="COSC260 Javascript Assignment">
         <meta name="keywords" content="pet, test, animal, compatibility">
@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <!-- JQuery Library 0-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <!-- Pet Test JS -->
+        <!-- Pet Test Javascript -->
         <script type="text/javascript" src="js/pet_registration.js"></script>
         <!-- this tag fixes some media min-width issues in some cases -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,42 +22,46 @@
         </head>
 
     <body>
-        <!-- Start Wrapper -->
+
+        <!-- Start Wrapper Frame-->
         <div id="frame">
+
             <div id="welcome">
-                <img src="./img/introdogs.jpg" id="introdogs" class="center" alt="Credits: image 5926065 at rawpixel.com creative commons">
+                <!-- Welcome users to the form page and explain where they are -->
+                <img src="./img/introdogs.jpg" id="introdogs" class="center" alt="Credits: image 5926065 at rawpixel.com creative commons" title="Credits: image 5926065 at rawpixel.com creative commons">
                 <h1 class="centertext">Perfect Pet Test!</h1>
-                <h3 class="centertext">Pet Registration Form</h3>
-
-                <!-- Name, Age, Email Phone -->
-                <form id="registrationForm">
-                    
-                    <label for="nameInput" class="inputLabel">Your Name</label><br>
-                    <ul id="nameErrors">
-                    </ul>
-                    <input type="text" id="nameInput" name="nameInput" class="inputTextbox"><br>
-                    
-                    <label for="ageInput"class="inputLabel">Your Age</label><br>
-                    <ul id="ageErrors">
-                    </ul>
-                    <input type="text" id="ageInput" name="ageInput" class="inputTextbox"><br>
-
-                    <label for="emailInput"class="inputLabel">Email Address</label><br>
-                    <ul id="emailErrors">
-                    </ul>
-                    <input type="text" id="emailInput" name="emailInput" class="inputTextbox"><br>
-
-                    <label for="phoneInput"class="inputLabel">Phone Number (Optional)</label><br>
-                    <ul id="phoneErrors">
-                    </ul>
-                    <input type="text" id="phoneInput" name="phoneInput" class="inputTextbox"><br>
-
-                    <input type="submit" id="submitRegistration" value="Submit" class="button center">
-                
-                </form>
-                <hr>
-
+                <h3 class="centertext">Pet Registration Form.</h3>
             </div>
+
+            <!-- Name, Age, Email, Phone -->
+            <form id="registrationForm">
+
+                <label for="nameInput" class="inputLabel">Your Name</label><br>
+                <ul id="nameErrors">
+                </ul>
+                <input type="text" id="nameInput" name="nameInput" class="inputTextbox"><br>
+                
+                <label for="ageInput" class="inputLabel">Your Age</label><br>
+                <ul id="ageErrors">
+                </ul>
+                <input type="text" id="ageInput" name="ageInput" class="inputTextbox"><br>
+
+                <label for="emailInput" class="inputLabel">Email Address</label><br>
+                <ul id="emailErrors">
+                </ul>
+                <input type="text" id="emailInput" name="emailInput" class="inputTextbox"><br>
+
+                <label for="phoneInput" class="inputLabel">Phone Number (Optional)</label><br>
+                <ul id="phoneErrors">
+                </ul>
+                <input type="text" id="phoneInput" name="phoneInput" class="inputTextbox"><br>
+
+                <!-- On form submit, JS will do client side validation -->
+                <input type="submit" id="submitRegistration" value="Submit" class="button center">
+
+            </form>
+            <hr>
+
         </div>
         <!-- End wrapper -->
     </body>

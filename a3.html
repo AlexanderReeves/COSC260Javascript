@@ -3,16 +3,16 @@
 
     <head>
         <title>The Pet Test!</title>
-        <!-- information about website -->
+        <!-- information about this website -->
         <meta charset="UTF-8">
         <meta name="description" content="COSC260 Javascript Assignment">
         <meta name="keywords" content="pet, test, animal, compatibility">
         <meta name="author" content="Alexander Reeves">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- JQuery Library 0-->
+        <!-- JQuery Library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <!-- Pet Test JS -->
+        <!-- Pet Test Javascript -->
         <script type="text/javascript" src="js/pet_test.js"></script>
         <!-- this tag fixes some media min-width issues in some cases -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,16 +22,19 @@
         </head>
 
     <body>
-        <!-- Start Wrapper -->
+        <!-- Start Wrapper Frame-->
         <div id="frame">
+
             <div id="welcome">
-                <img src="./img/introdogs.jpg" id="introdogs" class="center" alt="Credits: image 5926065 at rawpixel.com creative commons">
+                <!-- Image and message to welcome the user to the web page -->
+                <img src="./img/introdogs.jpg" id="introdogs" class="center" alt="Credits: image 5926065 at rawpixel.com creative commons" title="Credits: image 5926065 at rawpixel.com creative commons">
                 <h1 class="centertext">Perfect Pet Test!</h1>
-                <h3 class="centertext">Find your perfect companion</h3>
+                <h3 class="centertext">Find your perfect companion.</h3>
                 <hr>
 
             </div>
 
+            <!-- Quiz and inputs section -->
             <div id="questions">
                 <p class="lefttext">
                     <br>
@@ -39,6 +42,7 @@
                     <br>
                     Enter selections from the questionaire below, and submit the form to find your ideal pet!
                 </p>
+                <!-- Form questions (provided by assignment description) -->
                 <form id="petquiz">
                     <label for="q1">How much space do you have for a pet?</label>
                     <select name="q1" id="q1">
@@ -81,9 +85,11 @@
                     <input type="submit" id="submitTest" value="Submit" class="button center">
                     <hr id="endQuiz">
 
-                    <img src="./img/goldfish.png" id="resultFish" class="center hidden" alt="Credits: image 42540 at pickpik.com, license: creative commons">
-                    <img src="./img/cat.png" id="resultCat" class="center hidden" alt="Credits: https://picryl.com/media/kitten-cat-cat-baby-animals-6023b2, license: creative commons">
-                    <img src="./img/dog.png" id="resultDog" class="center hidden" alt="Credits: https://commons.wikimedia.org/wiki/File:Bon_toutou.png, license: creative commons">
+                    <!-- We have 3 images here which are all hidden by default -->
+                    <!-- The images will become visible when triggered by JS -->
+                    <img src="./img/goldfish.png" id="resultFish" class="center hidden" alt="Credits: image 42540 at pickpik.com, license: creative commons" title="Credits: image 42540 at pickpik.com, license: creative commons">
+                    <img src="./img/cat.png" id="resultCat" class="center hidden" alt="Credits: https://picryl.com/media/kitten-cat-cat-baby-animals-6023b2, license: creative commons" title="Credits: https://picryl.com/media/kitten-cat-cat-baby-animals-6023b2, license: creative commons">
+                    <img src="./img/dog.png" id="resultDog" class="center hidden" alt="Credits: https://commons.wikimedia.org/wiki/File:Bon_toutou.png, license: creative commons" title="Credits: https://commons.wikimedia.org/wiki/File:Bon_toutou.png, license: creative commons">
                     
                     <!-- https://commons.wikimedia.org/wiki/File:Bon_toutou.png Dog -->
                     <!-- image 42540 at pickpik.com creative commons fish -->
